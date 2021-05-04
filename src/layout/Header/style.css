@@ -1,0 +1,40 @@
+nav {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: grey;
+    position: absolute;
+    right: 0;
+    top: 1rem;
+    z-index: 1;
+}
+
+a {
+    color: rgb(131, 36, 255);
+    text-decoration: none;
+}
+
+a:hover {
+    transform: none;
+    text-decoration: none;
+    border-bottom: 3px transparent solid;
+    transition: border  0.5s;
+    transition-property: border-color;
+    transition-duration: 0.7s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    color: rgb(131, 36, 255);
+  }
+
+.current {
+    font-weight: bolder;
+    border-bottom: 2px solid;
+}
+
+@media only screen and (max-width: 800px) {
+    nav {
+        margin-top: 10px;
+        width: 80%;
+    }
+}
