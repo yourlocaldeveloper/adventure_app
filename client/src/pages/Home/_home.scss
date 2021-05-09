@@ -1,4 +1,25 @@
 #homepage {
   color: white;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+
+  .landing-images {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+
+  #dragon-img, #penguin-img {
+    max-width: 50px;
+    max-height: 50px;
+  }
+
+  #castle-img {
+
+  }
 }
 
