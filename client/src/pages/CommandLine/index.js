@@ -1,10 +1,12 @@
 import React from 'react';
+import { CLI, ProgressBar } from '../../components'
 
 const CommandLine = () => {
  
     return (
-        <section id="cli">
-            <h1>Game Screen!</h1>
+        <section id="command-line">
+          <ProgressBar />
+          <CLI />
         </section>
     )
 }
