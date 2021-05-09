@@ -34,8 +34,8 @@ const config = {
       // specific instructions for each helper
       { test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader' }, // transpile JavaScript files
       {
-        test: /\.css$/,
-        use: ['style-loader', 'css-loader'],
+        test: /\.s[ac]ss$/i,
+        use: ['style-loader', 'css-loader', 'sass-loader'],
       }, // transpile css files
       {
         test: /\.(png|svg|jpg|gif|pdf)$/,
