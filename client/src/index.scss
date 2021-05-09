@@ -1,6 +1,7 @@
 // Imports / Variables
 
 @import url('https://fonts.googleapis.com/css2?family=Euphoria+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&display=swap');
 // font-family: 'Euphoria Script', cursive;
 
 @import "../node_modules/bootstrap/scss/bootstrap";
@@ -14,3 +15,27 @@
 @import './components/CLI/cli';
 @import './components/ProgressBar/progressbar';
 @import './components/InputBar/inputbar';
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $scrollbar-color-bck;
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $scrollbar-color;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $scrollbar-color-hover;
+  border-radius: 5px;
+}

@@ -4,7 +4,9 @@ const CLI = () => {
  
     return (
         <div id="cli">
-          <p>Test</p>
+          <div className="p-wrapper">
+            <p>Test1 hello I am a penguin weeeeeeeeeeeeee wooooooooo</p>
+          </div>
         </div>
     )
 }
