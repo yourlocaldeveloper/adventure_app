@@ -4,16 +4,19 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
+  align-items: center;
+
+  .wrapper-homepage {
+    display: block;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
 
   .landing-images {
     display: flex;
     justify-content: center;
     align-content: center;
     align-items: flex-end;
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-    position: relative;
-    padding: 2rem;
   }
 
   #dragon-img, #penguin-img {
@@ -22,12 +25,9 @@
   }
 
   .enter-button {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
     display: flex; 
     justify-content: center;
     align-items: flex-end;
-    position: relative;
   }
 
   button {
@@ -35,7 +35,6 @@
     border-radius: 4px;
     width: 70%;
     height: 2rem;
-    margin-top: 2rem;
     color: $dark-purple;
     border: solid 2px $dark-purple;
     border-radius: 15px;

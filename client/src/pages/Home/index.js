@@ -8,13 +8,15 @@ const Home = () => {
     return (
         <>
             <main id="homepage">
-                <div className="landing-images">
-                <img id="penguin-img" src={penguin}/>
-                <img id="castle-img" src={castle}/>
-                <img id="dragon-img" src={dragon}/>
-                </div>
-                <div className="enter-button">
-                <button>Enter The Castle</button>
+                <div class="wrapper-homepage">
+                    <div className="landing-images">
+                    <img id="penguin-img" src={penguin}/>
+                    <img id="castle-img" src={castle}/>
+                    <img id="dragon-img" src={dragon}/>
+                    </div>
+                    <div className="enter-button">
+                    <button>Enter The Castle</button>
+                    </div>
                 </div>
             </main>
         </>
