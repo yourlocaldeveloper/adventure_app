@@ -13,6 +13,9 @@ const Home = () => {
                 <img id="castle-img" src={castle}/>
                 <img id="dragon-img" src={dragon}/>
                 </div>
+                <div className="enter-button">
+                <button>Enter The Castle</button>
+                </div>
             </main>
         </>
     )
