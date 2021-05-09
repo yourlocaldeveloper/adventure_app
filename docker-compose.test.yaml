@@ -1,0 +1,7 @@
+services:
+  api:
+    container_name: adventure_test_api
+    tty: true
+networks: 
+  default:
+    name: adventure_test
