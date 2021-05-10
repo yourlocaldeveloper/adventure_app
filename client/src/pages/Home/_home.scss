@@ -1,4 +1,79 @@
 #homepage {
   color: white;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  align-items: center;
+
+  .wrapper-homepage {
+    display: block;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+
+  .landing-images {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-end;
+  }
+
+  #dragon-img, #penguin-img {
+    max-width: 50px;
+    max-height: 50px;
+  }
+
+  .enter-button {
+    display: flex; 
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  button {
+    background: none;
+    border-radius: 6px;
+    width: 70%;
+    color: $dark-purple;
+    border: solid 2px $dark-purple;
+    border-radius: 15px;
+    font-family: 'Euphoria Script', cursive;
+    margin: 1rem;
+    font-size: 1.4rem;
+  }
+
+  button:hover {
+    transform: scale(1.05);  }
 }
 
+#help {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 1.5rem;
+
+  button {
+    border-radius: 50%;
+    color: $dark-purple;
+    border: solid 2px $dark-purple;
+  }
+}
+
+
+.help-container {
+  border: solid 5px $dark-purple;
+  border-radius: 10px;
+  background-color: rgba(196, 185, 193, 0.6); //light purple color in rbg
+  width: 300px;
+  height: 200px;
+  position: fixed;
+  right: 0;
+  margin: 1rem;
+}
+
+.show-help {
+  margin: 1rem;
+  margin-top: 3rem;
+  font-family: $console-font;
+  color: $scrollbar-color-hover;
+}

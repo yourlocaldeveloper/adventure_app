@@ -1,0 +1,23 @@
+#input-bar {
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border: solid 5px $dark-purple;
+  padding-left: 25px;
+  height: 50px;
+  width: 75%;
+  margin-left: 12.5%;
+  input[type=text] {
+    height: 40px;
+    width: 80%;
+    border: 0;
+  }
+  input[type=submit] {
+    height: 40px;
+    width: 20%;
+    border-bottom-right-radius: 25px;
+    border: 0;
+  }
+  input:focus {
+    outline: none;
+  }
+}

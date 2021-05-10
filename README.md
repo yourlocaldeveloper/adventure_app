@@ -40,22 +40,27 @@ To teardown docker compose completely:
 ### Dependencies: 
    - Server: cors, nodemon, express
    
-   - Client: axios, file-loader, react, router-dom, react-router-dom
+   - Client: axios, bootstrap, react, router-dom, react-router-dom
 
 ### DevDependencies:
    - Server: jest, nodemon, supertest
    
-   - Client: babel, react-testing-library, jest
+   - Client: babel, file-loader, sass, sass-loader, react-testing-library, jest
 
 ## Process 
 1. Start by planning out a plan!!! Use of GitHub Projects to set up a Kanban board.
 2. Create design plan in Photoshop  
+3. Start with front end 
 
-## Bugs
+## Bug
+- [x] no bugs here!
 
 ## Changelog
 
 ### Client
+1. Set up file structure 
+2. Create landing page and game page
+3. Add styling and layout structure of pages
 
 ### API
 1. Set up server with routes, models and controllers  
@@ -78,4 +83,4 @@ To teardown docker compose completely:
 
 ## Collaborators
 
-[@heyaero](https://github.com/heyaero) & [@natbibi](https://github.com/natbibi)
+[@HeyAero](https://github.com/HeyAero) & [@natbibi](https://github.com/natbibi)
