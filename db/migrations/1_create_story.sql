@@ -1,6 +1,6 @@
-DROP TABLE IF EXISTS story;
+DROP TABLE IF EXISTS adventure;
 
-CREATE TABLE story (
+CREATE TABLE adventure (
   id serial PRIMARY KEY,
-  story jsonb
+  story json
 )

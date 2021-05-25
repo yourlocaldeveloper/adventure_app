@@ -2,6 +2,7 @@ const Story = require('../models/Story');
 
 async function index (req, res) {
   try {
+    console.log("FETCHING STORIES")
     const stories = await Story.all;
     res.status(200).json(stories);
   } catch(err) {

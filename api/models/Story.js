@@ -1,20 +1,19 @@
 const db = require('../dbConfig/init');
 const SQL = require('sql-template-strings');
+const story1 = require('../story.json');
 
 class Story {
   constructor(data) {
-    this.id = data.id
     this.story = data.story
   }
 
   static get all()  {
+    console.log("YO")
     return new Promise(async (res, rej) => {
       try {
-        let result = await db.query(SQL`SELECT * FROM story;`);
-        let stories = result.rows.map(r => new Story(r));
-        res(stories);
+        res(story1);
       } catch (err) {
-        rej(`ERROR: Could not find any storys D: - {err}`)
+        rej(`ERROR: Could not find any storys D: - ${err}`)
       }
     })
   }
