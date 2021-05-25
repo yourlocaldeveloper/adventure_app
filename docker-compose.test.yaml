@@ -1,7 +1,23 @@
 services:
   api:
     container_name: adventure_test_api
+    environment: 
+      - PGUSER=admin
+      - PGHOST=db
+      - PGPASSWORD=password
+      - PGDATABASE=test_adventure
+      - PGPORT=5432
+      - NODE_ENV=test
     tty: true
+  db:
+    container_name: adventure_test_db
+    volumes:
+      - "test_db:/var/lib/postgresql/data"
+    environment: 
+      - POSTGRES_DB=test_adventure
+      - POSTGRES_PASSWORD=password
+volumes:
+  test_db:
 networks: 
   default:
     name: adventure_test

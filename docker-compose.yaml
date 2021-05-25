@@ -7,3 +7,9 @@ services:
       - type: bind
         source: ./api
         target: /code
+  db:
+    image: postgres:12.4
+    environment: 
+      - POSTGRES_USER=admin
+    volumes:
+      - "./db/migrations:/docker-entrypoint-initdb.d/:ro"

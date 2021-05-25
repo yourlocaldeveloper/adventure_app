@@ -3,7 +3,24 @@ services:
     container_name: adventure_dev_api
     ports: 
       - 3000:3000
-    command: bash -c "npm install && npm run dev"
+    environment: 
+      - PGUSER=admin
+      - PGHOST=db
+      - PGPASSWORD=password
+      - PGDATABASE=adventure
+      - PGPORT=5432
+      - NODE_ENV=development
+    command: bash -c "npm install && npm run seedDev && npm run dev"
+  db:
+    container_name: adventure_dev_db
+    volumes:
+      - "dbdata:/var/lib/postgresql/data"
+    environment: 
+      - POSTGRES_DB=adventure
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=password
+volumes:
+  dbdata:
 networks: 
   default:
     name: adventure_api
