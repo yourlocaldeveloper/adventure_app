@@ -26,7 +26,6 @@ const CommandLine = () => {
   }, [])
 
   function fetchContent(){
-    console.log(story)
     return (
       <>
         {error ?
@@ -34,7 +33,7 @@ const CommandLine = () => {
         :
           <>
             <ProgressBar />
-            <CLI/>
+            <CLI story={story}/>
             <InputBar />
           </>
         }
